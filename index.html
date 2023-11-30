@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nota Fiscal de Serviço</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>Emissão de Nota Fiscal de Serviço</h2>
+    <form id="notaFiscalForm">
+        <label for="servico">Descrição do Serviço:</label><br>
+        <input type="text" id="servico" name="servico"><br>
+
+        <label for="valor">Valor do Serviço (R$):</label><br>
+        <input type="number" id="valor" name="valor"><br>
+
+        <input type="button" value="Gerar Nota Fiscal" onclick="gerarNotaFiscal()">
+    </form>
+
+    <h3>Nota Fiscal Gerada:</h3>
+    <div id="notaFiscal"></div>
+</body>
+</html>
